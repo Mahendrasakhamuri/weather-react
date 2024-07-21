@@ -44,7 +44,7 @@ function App() {
                 const response = await axios.get(URL);
                 setData(response.data);
             } catch (error) {
-                setError("City Not Found.");
+                setError("City Not Found");
             }
             setTimeout(() => {
                 setLoading(false);
